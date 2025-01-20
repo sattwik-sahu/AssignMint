@@ -1,0 +1,28 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% The following two packages - multirow and booktabs - are needed to create nice looking tables.
+\usepackage{multirow} % Multirow is for tables with multiple rows within one cell.
+\usepackage{booktabs} % For even nicer tables.
+\usepackage{graphicx}
+% The default setting of LaTeX is to indent new paragraphs. This is useful for articles. But not really nice for homework problem sets. The following command sets the indent to 0.
+\usepackage{setspace}
+\setlength{\parindent}{0in}
+% Package to place figures where you want them.
+\usepackage{float}
+% The fancyhdr package let's us create nice headers.
+\usepackage{fancyhdr}
+
+\input{vars.tex}
+\input{header.tex}
+
+\begin{document}
+  \input{title.tex}
+
+  \begin{enumerate}
+    \item \input{answers/q1.tex}
+    \item \input{answers/q2.tex}
+  \end{enumerate}
+\end{document}
